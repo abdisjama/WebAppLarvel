@@ -15,16 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('logout/', 'PostsController@logout'); //to add route to logout method
+Route::get('index', 'PostsController@index');
+Route::get('gallery', 'PostsController@gallery');
 
-Route::get('posts/welcome', function () {
-    $name='Curtis';
-    return view('posts/welcome',compact('name'));
-});
-
-Route::get('posts/viewallposts', function() {
-    $posts= ['First Post', 'Second Post', 'Third Post'];
-    return view('posts/viewallposts', compact('posts'));
-});
 
 
 
