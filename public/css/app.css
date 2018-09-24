@@ -10473,6 +10473,10 @@ a.text-dark:focus {
 
 /* GALLERY */
 
+.body {
+  background: blue !important;
+}
+
 #title {
   text-align: center;
   margin: 3%;
