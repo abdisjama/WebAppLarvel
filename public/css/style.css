@@ -1,6 +1,36 @@
+/* FONTS */
+
+@font-face {
+    font-family: AbrahamLincoln;
+    src: url('/fonts/AbrahamLincoln.ttf');
+}
+
+#toppage-text {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+  margin-top: 200px;
+  
+  font-weight: 600;
+}
+
+#booking-button {
+  margin-top: 20px;
+}
+
+#navtitle {
+    font-family: 'AbrahamLincoln';
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    color: #ECB73C;
+    margin-left: 20px;
+}
+
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: #161616;
+  
 }
 
 #mainNav .navbar-toggler {
@@ -18,6 +48,9 @@
   color: #fcbf3d;
   font-weight: 700;
   padding: .9rem 0;
+}
+#mainNav .navbar-nav .nav-item li{
+  list-style-type: none;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -37,6 +70,7 @@
     background-color: transparent;
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
+    
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
@@ -47,6 +81,8 @@
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size:80%;
   }
   #mainNav .nav-link:hover {
     color: #fcbf3d;
@@ -84,8 +120,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-man.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-man.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/beard2.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/beard2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -133,7 +169,7 @@
   left: calc(50% - 20px);
 }
 
-.btn {
+.bton {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -143,47 +179,50 @@
   letter-spacing: .15rem;
   border: 0;
   
+  
+  
 }
 
-.btn-primary {
+.bton-primary {
   background-color: #fcbf3d; 
   margin-top : 255px;
+  margin-left:10px;
 }
 
 
-.btn-primary:hover {
+.bton-primary:hover {
   background-color: #fccf3d;
 }
 
-.btn-primary:focus {
+.bton-primary:focus {
   background-color: #fcbf3d;
   color: white;
 }
 
-.btn-primary:active {
+.bton-primary:active {
   background-color: #fccf3d !important;
 }
 
 
-.btn-secondary {
+.bton-secondary {
   background-color: #fcbf3d; 
 }
 
 
-.btn-secondary:hover {
+.bton-secondary:hover {
   background-color: #fccf3d;
 }
 
-.btn-secondary:focus {
+.bton-secondary:focus {
   background-color: #fcbf3d;
   color: white;
 }
 
-.btn-secondary:active {
+.bton-secondary:active {
   background-color: #fccf3d !important;
 }
 
-.bton {
+.boton {
   -webkit-box-shadow: 0 0.175rem 0.175rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.175rem 0.175rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -278,10 +317,14 @@
   
 }
 
+#contact-header {
+  margin-bottom: 50px;
+}
+
 .contact-section .card {
   border: 0;
   /*border-bottom: 0.25rem solid #000;*/
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: white;
 }
 
 .contact-section .card h4 {
@@ -319,6 +362,7 @@ a:focus, a:hover {
 }/*boxes*/
 
 .bg-primary {
+  
   background-color: #fccf3d !important;
   
 }/*Bootom of contact*/
@@ -470,8 +514,24 @@ a:focus, a:hover {
 
 /* GALLERY */
 
+@font-face {
+    font-family: AbrahamLincoln;
+    src: url('/fonts/AbrahamLincoln.ttf');
+}
+
+.gallery-wrapper {
+  background-color: #161616;
+}
+
+.gallery-section {
+  padding: 150px 0px 150px 0px;
+}
 
 #title {
+    font-family: 'AbrahamLincoln';
+    font-size: 5vw;
+    font-weight: 100;
+    letter-spacing: 1vw;
     text-align: center;
     margin: 3%;
 
@@ -480,6 +540,21 @@ a:focus, a:hover {
 #photos {
     margin: 0% 10%;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.gallery-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 
 #photos {
    /* Prevent vertical gaps */
@@ -499,15 +574,21 @@ a:focus, a:hover {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
+  cursor: pointer;
   
 
   
 
 }
 
-#photos img:hover {
+.gallery-container > img:hover{
   -webkit-filter: brightness(0.6);
   filter: brightness(0.6);
+  transition-duration: 0.5s;
+  
+}
+.gallery-container:hover .centered{
+  visibility: visible;
   transition-duration: 0.5s;
   
 }
@@ -539,4 +620,637 @@ a:focus, a:hover {
   -webkit-column-count: 1;
   column-count:         1;
   }
+}
+
+/* ADMIN NAV */
+ 
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #161616;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    font-family: 'Varela Round';
+}
+
+.admin-title {
+
+  padding: 5px 0px 5px 16px;
+  font-family: Nunito;
+
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+#nav-title{
+    color: white;
+    font-size: 18px;
+}  
+
+#nav-underline {
+    display: block;
+    width: 95%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #818181;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 12px 8px 12px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #FFFFFF;
+    background: #3b3938;
+    text-decoration: none;
+}
+
+/*
+.nav-item {
+  height: 50px;
+  width: 95%;
+  color: #FFFFFF;
+}
+.nav-item:hover {
+  background: #3b3938;
+}
+*/
+/* Style page content */
+.booking-main {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* ADMIN DASHBOARD */
+
+
+
+#admin-topbar {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c7c5c4;
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+  
+}
+
+#dashbord-title {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.admin-table tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+/* select dropdown for barbers */
+
+#barber-select {
+  position: relative;
+  font-family: 'Nunito';
+  width: 300px;
+  background: transparent;
+  padding: 8px 20px 8px 5px;
+  border: 2px solid #818181;
+  color: #818181;
+  margin-right: 5px;
+  border-radius: 3px;
+  
+
+}
+
+.date-picker {
+  padding: 8px 0px 8px 0px;
+  border: 2px solid #818181;
+  text-align: center;
+  cursor: pointer;
+  color: #818181;
+  margin-right: 5px;
+  font-family: 'Nunito';
+  border-radius: 3px;
+  
+}
+
+.admin-button{
+    font-family: 'Nunito';
+    background-color: #161616;
+    border: 2px solid #161616;
+    border-radius: 3px;
+    color: #C5C5C5;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.admin-button:hover {
+    background-color: #373737;
+    color: white;
+    transition: .3s;
+}
+
+#barber-search{
+  margin: 50px 0px;
+}
+
+/* ADMIN BARBERS */
+
+.time-button{
+    background-color: #161616;
+    color: #C5C5C5;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0px 10px 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 3px;
+    
+}
+
+#new-barber {
+}
+
+.time-button:focus {outline:0;}
+
+.time-button:hover {
+  background-color: #373737;
+  color: white;
+}
+
+.tablerow {
+   height: 50px !important;
+   font-weight: normal;
+   letter-spacing: 1px;
+}
+
+.top-col {
+  width: 15%;
+}
+
+.top-row {
+  height: 50px;
+}
+
+#barber-datepicker {
+  margin: 20px 0px 37px 0px;
+  
+}
+
+#barber-checkbox {
+  margin: 35px 0px 0px;
+}
+
+.admin-links {
+  float: right;
+  margin-right: 20px;
+  color: black;
+}
+.admin-links:hover {
+  color: #C5C5C5;
+}
+
+/* EDIT BOOKING */
+.close-button {
+  float: right;
+  margin-right: 20px;
+  font-size: 50px;
+  margin-top: -13px;
+}
+
+#admin-topnav {
+  border-bottom: 1px solid #c7c5c4;
+  padding-bottom: 8px;
+}
+
+#edit-title {
+margin-left: 250px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#customer-info {
+  float: right;
+  background-color: white;
+  width: 400px;
+  border-left: 1px solid #c7c5c4;
+  border-bottom: 1px solid #c7c5c4;
+  height: 100%;
+}
+
+#main-content {
+  position: absolute;
+  width: 100%;
+
+  
+}
+
+#edit-heading {
+  margin: 16px 0px 0px 0px;
+  font-family: 'Nunito';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#profile-picture {
+  float: left;
+  margin: 10px 15px 10px 10px ;
+}
+
+.customer-info {
+  padding: 0px 0px 5px 0px;
+  margin: 0px 0px -8px 10px;
+  letter-spacing: 0.5px;
+}
+
+#total-sales {
+  float: right;
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+}
+#total-bookings {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.edit-number {
+  font-size: 30px;
+  margin-bottom: -3px;
+}
+
+#past-appointments {
+  margin: 16px 0px 0px 10px;
+  padding: 9px 0px 0px;
+  font-family: 'Nunito';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#past-app {
+  height: 70px;
+  border-top: 1px solid #c7c5c4;
+  border-bottom: 1px solid #c7c5c4;
+  
+
+}
+
+#booking-totals {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+#app-date {
+  display: inline-block;
+  margin: 10px;
+  padding: 0px;
+  width: 120px;
+  float: left;
+  height: 60px;
+  
+
+}
+
+#app-day {
+  font-size: 25px !important;
+  font-weight: bold;
+  margin-bottom: -10px;
+  float: left;
+}
+
+#app-month {
+  padding: 7px 0px 0px 35px;
+  margin: 0px;
+  width: 20px;
+}
+
+#app1 {
+  border-bottom: 1px solid #c7c5c4;
+}
+
+#cut-details {
+  display: inline-block;
+  margin: 10px;
+  padding: 0px;
+  width: 150px;
+  height: 60px;
+}
+
+#cut-type {
+  padding: 7px 0px 0px 0px;
+  margin: 0;
+}
+
+#app-price {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 26px 20px 0px 0px;
+}
+
+#appointments {
+  height: 320px;
+}
+
+#edit-buttons {
+  border-top: 1px solid #c7c5c4;
+
+}
+
+.edit-button {
+  margin: 10px 0px;
+}
+
+#edit-close {
+  margin-left: 43px;
+}
+
+.edit-form {
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+
+#edit-form-div {
+    margin: 50px 0px 0px 300px;
+    width: 30%;
+    background-color: white;
+}
+    
+#edit-start {
+    width: 100%;
+    
+}
+
+#barber-select-edit {
+  position: relative;
+  font-family: 'Nunito';
+  width: 100%;
+  background: white;
+  padding: 5px 20px 8px 5px;
+  border: 1px solid #ced4da;
+  color: #818181;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+
+/* SERVICES */
+
+.services-wrapper {
+  padding: 0px 100px;
+  padding-top: 200px;
+  background-color: #161616;
+}
+
+.service-text {
+  color: white;
+}
+
+
+.padding80 {Padding:80px;}
+.sec-title h2 {font-size:36px;font-weight:600;}
+.sec-title h3 {font-size:18px; margin-bottom:30px;}
+.sec-title h3:after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background: #fcbf3d;
+    left: 40%;
+    bottom: 60px;
+}
+.team-box {border: 2px solid #000; padding:10px;}
+.team-box:hover {border: 2px solid #fcbf3d;}
+.team-img img {border: 1px solid #000;}
+.team-title h3 {font-size:24px;font-weight:700;color:#fcbf3d;}
+.team-title h4 {font-size:16px; font-weight:600;}
+.team-title p {line-height:22px;}
+
+.card-product {
+  margin-bottom: 1rem;
+  /* btn-overlay-bottom */ }
+ 
+  .card-product:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden; }
+ 
+  .card-product .img-wrap {
+    border-radius: 0.2rem 0.2rem 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center; }
+ 
+    .card-product .img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      display: inline-block;
+      -o-object-fit: cover;
+         object-fit: cover; }
+ 
+  .card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee; }
+ 
+  .card-product .action-wrap {
+    padding-top: 4px;
+    margin-top: 4px; }
+
+  .card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee; }
+ 
+  .card-product .title {
+    margin-top: 0; }
+ 
+  .card-product .btn-overlay {
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5); }
+ 
+  .card-product:hover .btn-overlay {
+    opacity: 1; }
+ 
+  .card-product:hover {
+    -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+            box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+    -webkit-transition: .5s;
+    transition: .5s; }
+
+ 
+.card-sm .img-wrap {
+  height: 180px; }
+
+ 
+.card-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 0.25rem; }
+ 
+  .card-banner .card-body {
+    background-size: cover;
+    position: relative;
+    z-index: 10; }
+
+  .card-banner .img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    max-width: 100%; }
+
+  .card-banner .overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+    padding: 1.25rem;
+    color: #fff; }
+ 
+  .card-banner .overlay.bottom {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+ 
+  .card-banner .overlay.top {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+ 
+  .card-banner .overlay-cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%; }
+ 
+  .card-banner .overlay.left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute; }
+
+  .card-banner .text-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 7px 20px;
+    padding-top: 30px;
+    border-radius: 0 0 0.25rem 0.25rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    color: #fff; }
+
+ 
+.banner-size-lg {
+  height: 350px; }
+
+
+.card .img-wrap {
+  overflow: hidden; }
+  
+  .time-button{
+    background-color: #161616;
+    color: #C5C5C5;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0px 10px 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 3px;
+    
+}
+
+.time-button:focus {outline:0;}
+
+.time-button:hover {
+  background-color: #373737;
+  color: white;
+}
+
+.tablerow {
+   height: 50px !important;
+   font-weight: normal;
+   letter-spacing: 1px;
+}
+
+.top-col {
+  width: 15%;
+}
+
+.top-row {
+  height: 50px;
+}
+
+.add-button {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  vertical-align: middle;
+  visibility: visible;
+  
+  
+}
+
+.add-button:hover {
+  visibility: visible;
+  transition: 0.5s;
 }
