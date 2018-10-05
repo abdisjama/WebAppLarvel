@@ -57,7 +57,7 @@
                                     </label>
                                 </div>
                         <div class="form-group">
-                            <a class="btn btn-link" href="{{ route('password.request') }}" class="ForgetPwd">
+                            <a class="btn btn-link" href="#" class="ForgetPwd">
                             {{ __('Forgot Your Password?') }}
                             </a>
                         </div>
